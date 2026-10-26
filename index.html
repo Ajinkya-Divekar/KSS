@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KSS Bharat | Tissue paper supply for business</title>
+<meta name="description" content="KSS Bharat supplies reliable tissue paper to hotels, restaurants, offices and healthcare. Request a quote or a free sample.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f6f2e8;--cream2:#ece6d6;--ink:#17261e;--green:#1f5b3a;--green2:#2f7d52;--leaf:#a9c9a0;--muted:#5d6b62;--line:#d9d2bf;--serif:'DM Serif Display',Georgia,serif;--sans:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--green2);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1}
+h1{font-size:clamp(2.8rem,7vw,5.6rem)}
+h2{font-size:clamp(2rem,4.5vw,3.4rem)}
+h3{font-size:1.4rem}
+em{color:var(--green)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.alt{background:var(--cream2)}
+.kicker{font-weight:700;font-size:.9rem;color:var(--green);margin-bottom:14px}
+.muted{color:var(--muted)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:52ch;margin:22px 0 32px}
+.pill{display:inline-block;border:0;cursor:pointer;font:700 1rem var(--sans);padding:14px 26px;border-radius:99px;transition:transform .2s,background .2s}
+.pill:hover{transform:translateY(-2px)}
+.pill.green{background:var(--green);color:#fff}.pill.green:hover{background:var(--green2)}
+.pill.light{background:transparent;border:2px solid var(--ink)}
+.pill.light:hover{background:var(--ink);color:var(--cream)}
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;background:rgba(246,242,232,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font-family:var(--serif);font-size:1.6rem;line-height:1}.logo small{display:block;font:700 .6rem var(--sans);letter-spacing:.3em;color:var(--green)}
+nav{display:flex;gap:26px}
+nav a{font-weight:600;font-size:.95rem;color:var(--muted);padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{color:var(--ink);border-color:var(--green)}
+.burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--green);z-index:60}
+.wa{position:fixed;right:20px;bottom:20px;z-index:50;background:#1fa855;color:#fff;font-weight:700;padding:13px 20px;border-radius:99px;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+/* hero */
+.hero{padding-top:150px;min-height:100vh;display:flex;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1 span{display:block;opacity:0;transform:translateY(30px);animation:up .8s forwards}
+.hero h1 span:nth-child(2){animation-delay:.2s;color:var(--green)}
+.hero .lead,.hero .btns,.hero .ticks{opacity:0;animation:up .8s .5s forwards}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.ticks{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;font-weight:600;font-size:.92rem;color:var(--muted)}
+.ticks span::before{content:"✓ ";color:var(--green)}
+@keyframes up{to{opacity:1;transform:none}}
+.stage{position:relative;aspect-ratio:1;max-width:460px;margin:auto;width:100%}
+.disc{position:absolute;inset:6%;border-radius:50%;background:var(--leaf);opacity:.55;animation:pulse 6s ease-in-out infinite}
+.roll{position:absolute;inset:22% 14% 18%;border-radius:18px 18px 50% 50%/18px 18px 22% 22%;background:#fff;box-shadow:0 30px 50px rgba(23,38,30,.18);display:grid;place-items:center;text-align:center;animation:float 5s ease-in-out infinite}
+.roll b{font-family:var(--serif);font-size:3rem;font-weight:400;color:var(--green);line-height:1}
+.roll small{display:block;font-weight:800;letter-spacing:.35em;font-size:.7rem}
+.roll::before{content:"";position:absolute;top:-16px;left:50%;width:46%;height:32px;margin-left:-23%;border-radius:50%;background:var(--cream2);border:3px solid #fff;box-shadow:inset 0 0 0 10px #fff,inset 0 0 0 14px var(--cream2)}
+.sheet{position:absolute;left:34%;bottom:2%;width:34%;height:16%;background:#fff;border-radius:2px 2px 14px 14px;box-shadow:0 10px 20px rgba(0,0,0,.1);transform-origin:top;animation:sway 4s ease-in-out infinite}
+.leaf{position:absolute;width:56px;height:90px;background:var(--green2);border-radius:0 100% 0 100%;opacity:.8}
+.l1{top:4%;right:6%;transform:rotate(25deg);animation:float 6s ease-in-out infinite}
+.l2{bottom:10%;left:2%;width:40px;height:64px;transform:rotate(-40deg);animation:float 7s -2s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px)}}
+@keyframes sway{50%{transform:skewX(6deg) scaleY(1.1)}}
+@keyframes pulse{50%{transform:scale(1.05)}}
+.ph{font-size:.8rem;color:var(--muted);text-align:center;margin-top:10px}
+/* marquee */
+.strip{padding:22px 0;background:var(--ink);color:var(--cream);overflow:hidden}
+.track{display:flex;gap:56px;width:max-content;animation:slide 28s linear infinite;font-weight:700}
+.track span{white-space:nowrap}
+.strip:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* generic */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.photo{aspect-ratio:4/3;border-radius:20px;background:repeating-linear-gradient(45deg,var(--cream2),var(--cream2) 14px,#e3dcc8 14px,#e3dcc8 28px);border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font-weight:600;padding:20px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+.head{max-width:640px;margin-bottom:48px}
+/* product */
+.prod{background:#fff;border-radius:28px;padding:40px;display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center;box-shadow:0 20px 50px rgba(23,38,30,.08)}
+.prod .photo{aspect-ratio:1}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.specs div{border:1px solid var(--line);border-radius:12px;padding:12px 16px;transition:border-color .2s,transform .2s}
+.specs div:hover{border-color:var(--green);transform:translateY(-3px)}
+.specs small{display:block;color:var(--muted);font-size:.8rem}
+.specs b{font-size:1.05rem}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.tags span{background:var(--cream2);border-radius:99px;padding:6px 14px;font-size:.85rem;font-weight:600}
+/* why */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:28px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(23,38,30,.1)}
+.ic{width:46px;height:46px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:1.2rem;margin-bottom:18px}
+.card p{color:var(--muted);margin-top:8px;font-size:.95rem}
+/* timeline */
+.tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-top:44px}
+.tl::before,.tl i{content:"";position:absolute;top:14px;left:0;height:4px;border-radius:4px}
+.tl::before{right:0;background:var(--line)}
+.tl i{width:0;background:var(--green);transition:width 1.6s ease}
+.tl.in i{width:100%}
+.step{position:relative}
+.step::before{content:"";position:absolute;top:-38px;left:0;width:20px;height:20px;border-radius:50%;background:var(--cream);border:4px solid var(--green)}
+.step b{font-family:var(--serif);font-size:1.1rem;color:var(--green);font-weight:400}
+.step h3{margin:6px 0}
+.step p{color:var(--muted);font-size:.95rem}
+/* industries */
+.ind{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.ind div{background:#fff;border-radius:16px;padding:26px 20px;border-bottom:4px solid var(--leaf);transition:border-color .2s,transform .2s}
+.ind div:hover{border-color:var(--green);transform:translateY(-4px)}
+.ind p{font-size:.9rem;color:var(--muted);margin-top:6px}
+.emo{font-size:1.8rem;display:block;margin-bottom:10px}
+/* stats */
+.stats{background:var(--green);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.stats strong{display:block;font:400 clamp(2.6rem,6vw,4.4rem)/1 var(--serif)}
+.stats span{opacity:.85}
+.note{grid-column:1/-1;opacity:.6;font-size:.8rem}
+/* calc */
+.calc{background:#fff;border-radius:24px;padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+label{display:block;font-weight:700;font-size:.9rem;margin:14px 0 6px}
+input,select,textarea{width:100%;font:500 1rem var(--sans);padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--green);outline:0}
+.out{background:var(--cream2);border-radius:16px;padding:28px}
+.out strong{font:400 3rem/1 var(--serif);color:var(--green)}
+/* faq */
+.faq{max-width:780px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:700;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.5rem;line-height:1;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:10px;animation:up .4s}
+/* banner */
+.banner{background:var(--ink);color:var(--cream)}
+.banner .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.banner em{color:var(--leaf)}
+.banner p{opacity:.75;margin-top:12px}
+.banner .pill.light{border-color:var(--cream);color:var(--cream)}
+.banner .pill.light:hover{background:var(--cream);color:var(--ink)}
+/* contact */
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form{background:#fff;border-radius:24px;padding:36px;box-shadow:0 20px 50px rgba(23,38,30,.08)}
+.form h3{margin-bottom:6px}
+.form textarea{min-height:100px;resize:vertical;margin-top:14px}
+.form .pill{margin-top:18px;width:100%}
+.msg{display:block;margin-top:12px;font-weight:600;color:var(--green)}
+.info{margin-top:28px;display:grid;gap:10px;font-weight:600}
+footer{padding:36px 0;background:var(--ink);color:var(--cream);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer small{display:block;opacity:.6}
+@media(max-width:900px){
+ section{padding:70px 0}
+ nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--cream);flex-direction:column;padding:20px 24px;gap:14px;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}.burger{display:block}
+ header .pill{display:none}
+ .hero .wrap,.two,.prod,.calc{grid-template-columns:1fr}
+ .grid4,.tl{grid-template-columns:1fr 1fr}
+ .ind{grid-template-columns:1fr 1fr}
+ .stats .wrap{grid-template-columns:1fr}
+ .tl::before,.tl i{display:none}.step::before{display:none}
+ .prod{padding:24px}
+}
+@media(max-width:520px){.grid4,.tl,.ind,.row,.specs{grid-template-columns:1fr}.wa{right:12px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 span,.hero .lead,.hero .btns,.hero .ticks{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#top">KSS<small>BHARAT</small></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="nav">
+   <a href="#about">About</a><a href="#product">Product</a><a href="#why">Why KSS</a><a href="#process">How we work</a><a href="#industries">Who we serve</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="pill green" href="#contact">Get a quote</a>
+ </div>
+</header>
+<a class="wa" href="https://wa.me/910000000000?text=Hi%20KSS%20Bharat%2C%20I%20need%20a%20tissue%20paper%20quote" target="_blank" rel="noopener">WhatsApp us</a>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <p class="kicker">KSS Bharat, by Kothadia Services &amp; Supplies</p>
+   <h1><span>Everyday essentials.</span><span>Made for business.</span></h1>
+   <p class="lead">Reliable tissue paper for hotels, restaurants, offices and healthcare, with steady quality and supply you can plan around.</p>
+   <div class="btns"><a class="pill green" href="#contact">Get a quote</a><a class="pill light" href="#sample">Request a free sample</a></div>
+   <div class="ticks"><span>Consistent quality</span><span>Reliable supply</span><span>Custom branding</span></div>
+  </div>
+  <div>
+   <div class="stage" aria-hidden="true"><div class="disc"></div><div class="roll"><div><b>KSS</b><small>BHARAT</small></div></div><div class="sheet"></div><div class="leaf l1"></div><div class="leaf l2"></div></div>
+   <p class="ph">Placeholder illustration. Replace with a product photo.</p>
+  </div>
+ </div>
+</section>
+
+<div class="strip" aria-label="Industries we supply"><div class="track" id="track">
+ <span>Hotels</span><span>Restaurants</span><span>Cafés</span><span>Offices</span><span>Hospitals and clinics</span><span>Retail shops</span><span>Distributors</span><span>Caterers</span>
+</div></div>
+
+<section id="about">
+ <div class="wrap two">
+  <div class="rv">
+   <p class="kicker">About KSS</p>
+   <h2>A dependable supply partner for everyday essentials.</h2>
+   <p class="lead">KSS Bharat is the business brand of Kothadia Services &amp; Supplies. We focus on practical tissue paper, clear communication and deliveries that arrive when promised.</p>
+   <p class="muted">[Placeholder: add one or two lines on the founder, the year started and the city you operate from.]</p>
+  </div>
+  <div class="photo rv">Factory, stock or team photo<br>(placeholder)</div>
+ </div>
+</section>
+
+<section id="product" class="alt">
+ <div class="wrap">
+  <div class="head rv"><p class="kicker">Our product</p><h2>One product, done properly.</h2><p class="lead">We'll add to this range as the business grows.</p></div>
+  <article class="prod rv">
+   <div class="photo">Product photo<br>(placeholder)</div>
+   <div>
+    <h3>KSS Bharat Tissue Paper</h3>
+    <p class="muted" style="margin:10px 0 18px">A soft, dependable everyday tissue for business and institutional use. [Placeholder: add a line on pulp type and finish.]</p>
+    <div class="tags"><span>Soft feel</span><span>Bulk packs</span><span>Private label available</span></div>
+    <div class="specs">
+     <div><small>Size</small><b>XX × XX cm</b></div>
+     <div><small>Ply</small><b>X ply</b></div>
+     <div><small>Sheets per pack</small><b>XX sheets</b></div>
+     <div><small>Packing</small><b>XX packs per carton</b></div>
+    </div>
+    <a class="pill green" href="#estimate">Estimate my order</a>
+   </div>
+  </article>
+ </div>
+</section>
+
+<section id="why">
+ <div class="wrap">
+  <div class="head rv"><p class="kicker">Why KSS Bharat</p><h2>Straightforward supply, without the fuss.</h2></div>
+  <div class="grid4">
+   <div class="card rv"><div class="ic">★</div><h3>Consistent quality</h3><p>Every batch checked against the same standard. [Add your quality process.]</p></div>
+   <div class="card rv"><div class="ic">⏱</div><h3>Reliable supply</h3><p>Stock planned ahead so repeat orders don't run dry. [Add lead time.]</p></div>
+   <div class="card rv"><div class="ic">₹</div><h3>Practical pricing</h3><p>Clear quotes with no surprises, and better rates on bulk orders.</p></div>
+   <div class="card rv"><div class="ic">✎</div><h3>Custom branding</h3><p>Put your hotel or restaurant name on the pack. [Confirm minimum quantity.]</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="process" class="alt">
+ <div class="wrap">
+  <div class="head rv"><p class="kicker">How we work</p><h2>From enquiry to delivery.</h2></div>
+  <div class="tl" id="tl"><i></i>
+   <div class="step rv"><b>1</b><h3>Tell us what you need</h3><p>Share your quantity, usage and location.</p></div>
+   <div class="step rv"><b>2</b><h3>Receive a quotation</h3><p>We reply with pricing, usually within [XX hours].</p></div>
+   <div class="step rv"><b>3</b><h3>Confirm your order</h3><p>Once confirmed, your order moves into dispatch.</p></div>
+   <div class="step rv"><b>4</b><h3>Delivery and follow-up</h3><p>We deliver, then check in before your next order.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="industries">
+ <div class="wrap">
+  <div class="head rv"><p class="kicker">Who we serve</p><h2>For places that use tissue every day.</h2></div>
+  <div class="ind">
+   <div class="rv"><span class="emo">🏨</span><h3>Hotels</h3><p>Guest rooms and back-of-house.</p></div>
+   <div class="rv"><span class="emo">🍽</span><h3>Restaurants and cafés</h3><p>Dining tables and daily service.</p></div>
+   <div class="rv"><span class="emo">🏢</span><h3>Offices</h3><p>Pantries and workplaces.</p></div>
+   <div class="rv"><span class="emo">⚕</span><h3>Healthcare</h3><p>Clinics and hospitals.</p></div>
+   <div class="rv"><span class="emo">📦</span><h3>Retail and distribution</h3><p>Resale and large-volume use.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="wrap">
+  <div><strong data-n="150" data-s="+">0</strong><span>Business clients</span></div>
+  <div><strong data-n="10" data-s="+">0</strong><span>Years in business</span></div>
+  <div><strong data-n="50" data-s=" tons">0</strong><span>Monthly supply capacity</span></div>
+  <small class="note">Placeholder figures. Replace with verified numbers.</small>
+ </div>
+</section>
+
+<section id="estimate">
+ <div class="wrap">
+  <div class="head rv"><p class="kicker">Order estimator</p><h2>Work out how much you need.</h2></div>
+  <div class="calc rv">
+   <div>
+    <label for="cType">Business type</label>
+    <select id="cType"><option value="30">Hotel (per room, per month)</option><option value="12">Restaurant (per table, per month)</option><option value="6">Office (per person, per month)</option><option value="20">Clinic (per bed, per month)</option></select>
+    <label for="cQty">Number of rooms, tables, people or beds</label>
+    <input id="cQty" type="number" min="1" value="20">
+   </div>
+   <div class="out">
+    <p class="muted">Estimated need per month</p>
+    <strong id="cOut">0</strong> packs
+    <p class="muted" style="margin:10px 0 18px">Rough guide only. Placeholder usage rates, to be confirmed.</p>
+    <a class="pill green" id="cGo" href="#contact">Send this to us</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="sample" class="alt">
+ <div class="wrap two">
+  <div class="rv"><p class="kicker">Try before you buy</p><h2>Request a free sample.</h2><p class="lead">See and feel the product before you place an order. [Confirm sample policy and delivery area.]</p></div>
+  <div class="rv"><a class="pill green" href="#contact" data-fill="Please send a free sample.">Ask for a sample</a></div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap">
+  <div class="head rv"><p class="kicker">FAQ</p><h2>Questions buyers ask us.</h2></div>
+  <div class="faq rv">
+   <details><summary>What is the minimum order?</summary><p>[Placeholder: add your minimum order quantity.]</p></details>
+   <details><summary>Which areas do you deliver to?</summary><p>[Placeholder: list cities or states you serve.]</p></details>
+   <details><summary>Can you print our brand on the packs?</summary><p>[Placeholder: confirm private label options and minimum quantity.]</p></details>
+   <details><summary>What payment terms do you offer?</summary><p>[Placeholder: advance, credit terms, UPI or bank transfer.]</p></details>
+   <details><summary>How quickly can you deliver?</summary><p>[Placeholder: typical dispatch and delivery time.]</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="banner">
+ <div class="wrap">
+  <div><h2>Built a business.<br><em>Now sharing what it taught me.</em></h2><p>Lessons, systems and practical ideas from the journey.</p></div>
+  <a class="pill light" href="learn.html">Learn from the journey</a>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap two" style="align-items:start">
+  <div class="rv">
+   <p class="kicker">Let's work together</p>
+   <h2>Need a reliable tissue supply partner?</h2>
+   <p class="lead">Tell us what your business needs. We'll reply with the right product and pricing.</p>
+   <div class="info"><span>📞 +91 00000 00000</span><span>✉ hello@kssbharat.com</span><span>📍 [City, State], India</span></div>
+  </div>
+  <form class="form rv" id="form" novalidate>
+   <h3>Get a quote</h3>
+   <div class="row"><div><label for="fn">Name</label><input id="fn" required></div><div><label for="fc">Company</label><input id="fc"></div></div>
+   <div class="row"><div><label for="fp">Phone</label><input id="fp" type="tel" required></div><div><label for="fe">Email</label><input id="fe" type="email"></div></div>
+   <label for="fr">Requirement</label><input id="fr" placeholder="e.g. 200 packs per month">
+   <label for="fm">Message</label><textarea id="fm"></textarea>
+   <button class="pill green" type="submit">Send enquiry</button>
+   <span class="msg" id="msg" role="status"></span>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div><b>KSS Bharat</b><small>Kothadia Services &amp; Supplies</small></div>
+  <a href="learn.html">Learn from the journey</a>
+  <span>© 2026 KSS Bharat</span>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+ // scroll progress
+ var bar=$('#bar');
+ function prog(){var h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'}
+ addEventListener('scroll',prog,{passive:true});prog();
+ // mobile menu
+ var nav=$('#nav'),bg=$('#burger');
+ bg.onclick=function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+ $$('#nav a').forEach(function(a){a.onclick=function(){nav.classList.remove('open');bg.setAttribute('aria-expanded',false)}});
+ // marquee duplicate
+ var t=$('#track');t.innerHTML+=t.innerHTML;
+ // reveal + timeline + counters
+ function count(el){
+  var n=+el.dataset.n,s=el.dataset.s||'',st=null;
+  function f(ts){st=st||ts;var p=Math.min((ts-st)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)}
+  requestAnimationFrame(f);
+ }
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(!e.isIntersecting)return;
+  e.target.classList.add('in');
+  if(e.target.dataset.n)count(e.target);
+  io.unobserve(e.target);
+ })},{threshold:.2});
+ $$('.rv,#tl,[data-n]').forEach(function(el){io.observe(el)});
+ // active nav link
+ var links=$$('#nav a'),secs=links.map(function(a){return $(a.getAttribute('href'))});
+ var so=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})
+ })},{rootMargin:'-45% 0px -50% 0px'});
+ secs.forEach(function(s){s&&so.observe(s)});
+ // estimator
+ var cT=$('#cType'),cQ=$('#cQty'),cO=$('#cOut');
+ function calc(){var v=Math.max(1,+cQ.value||1);cO.textContent=Math.ceil(v*cT.value/10)}
+ cT.onchange=cQ.oninput=calc;calc();
+ $('#cGo').onclick=function(){
+  var l=cT.options[cT.selectedIndex].text.split(' (')[0];
+  $('#fr').value='About '+cO.textContent+' packs per month for '+cQ.value+' ('+l+')';
+ };
+ // sample button prefill
+ $$('[data-fill]').forEach(function(a){a.onclick=function(){$('#fm').value=a.dataset.fill}});
+ // form
+ $('#form').onsubmit=function(e){
+  e.preventDefault();
+  var m=$('#msg');
+  if(!$('#fn').value.trim()||!$('#fp').value.trim()){m.style.color='#a33';m.textContent='Please enter your name and phone number.';return}
+  m.style.color='';m.textContent='Thanks. Your enquiry is captured. (Connect this form to email, WhatsApp or a backend before launch.)';
+  this.reset();
+ };
+})();
+</script>
+</body>
+</html>
