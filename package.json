@@ -1,0 +1,22 @@
+{
+  "name": "kss-bharat",
+  "version": "1.0.0",
+  "description": "KSS Bharat - Tissue paper supplier website",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "lint": "echo 'No linter configured for static HTML project'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "tissue",
+    "paper",
+    "supplier",
+    "india"
+  ],
+  "author": "",
+  "license": "ISC"
+}
