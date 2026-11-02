@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kothadia-services-supplies.vercel.app/sitemap.xml
