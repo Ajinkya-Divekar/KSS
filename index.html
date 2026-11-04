@@ -350,7 +350,7 @@ var GA_ID='G-M9RQB3L36M';
  <div class="clouds" aria-hidden="true"><i class="cl c3"></i><i class="cl c5"></i></div>
  <div class="wrap">
   <div class="rv"><p class="kicker">From the Founder's Desk</p><h2>Built a business.<br><em>Now sharing what it taught me.</em></h2><p>Lessons, systems and practical ideas from the journey.</p></div>
-  <a class="pill light" href="learn.html">Learn from the journey</a>
+  <a class="pill light" href="learn">Learn from the journey</a>
  </div>
 </section>
 
@@ -460,7 +460,7 @@ var GA_ID='G-M9RQB3L36M';
 <footer>
  <div class="wrap">
   <div><b>KSS Bharat</b><small>Kothadia Services &amp; Supplies</small></div>
-  <a href="learn.html">Learn from the journey</a>
+  <a href="learn">Learn from the journey</a>
   <span>© 2026 KSS Bharat</span>
   <div style="flex-basis:100%;opacity:.7;font-size:.82rem;line-height:1.7">Trading, retail and wholesale<br>Shop No. 97, Skyhigh City Center, Kirkatwadi, Pune – 411024<br>GSTIN: 27JWKPK0555F1ZB</div>
  </div>
@@ -596,7 +596,7 @@ var GA_ID='G-M9RQB3L36M';
  $('#trayMail').onclick=function(e){e.preventDefault();track('email_quote_click',{items:lines.length});location.href='mailto:nihark232@gmail.com?subject='+encodeURIComponent('Quote request from KSS Bharat website')+'&body='+encodeURIComponent(msg()+'\n\nPlease share your contact number if you would like a call back.')};
  $('#catCtaBtn').onclick=function(e){e.preventDefault();track('wholesale_cta_click',{category:cat});open('https://wa.me/918830449591?text='+encodeURIComponent('Hi KSS Bharat, I need a wholesale quote for '+(cat==='All'?'tissue, napkins and rolls':cat.toLowerCase())+'.'),'_blank')};
  document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a||a.id==='trayGo'||a.id==='trayMail'||a.id==='catCtaBtn')return;var h=a.getAttribute('href')||'';
-  if(h.indexOf('wa.me')>-1)track('contact_whatsapp_click');else if(h.indexOf('tel:')===0)track('contact_call_click');else if(h.indexOf('mailto:')===0)track('contact_email_click');else if(h.indexOf('maps.google')>-1)track('contact_map_click');else if(/\.pdf$/.test(h))track('catalogue_download');else if(h==='learn.html')track('learn_click')});
+  if(h.indexOf('wa.me')>-1)track('contact_whatsapp_click');else if(h.indexOf('tel:')===0)track('contact_call_click');else if(h.indexOf('mailto:')===0)track('contact_email_click');else if(h.indexOf('maps.google')>-1)track('contact_map_click');else if(/\.pdf$/.test(h))track('catalogue_download');else if(h==='learn')track('learn_click')});
  load();draw();
  showTray();
  $('#heroImg').src=IM.bharat.s;
