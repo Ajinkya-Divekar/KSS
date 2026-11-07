@@ -476,7 +476,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
  function firstIdx(){for(var i=0;i<VIDEOS.length;i++)if(VIDEOS[i].id)return i;return -1}
  function setActive(i,scroll){act=i;cards.forEach(function(c,k){c.classList.toggle('on',k===i)});if(!scroll)return;var c=cards[i],L=c.offsetLeft,R=L+c.offsetWidth,v0=vcar.scrollLeft,v1=v0+vcar.clientWidth;if(L<v0+8||R>v1-8)vcar.scrollTo({left:Math.max(0,L-24),behavior:'smooth'})}
  function makePlayer(i){
-  player=new YT.Player('ytp',{width:'100%',height:'100%',videoId:VIDEOS[i].id,playerVars:{autoplay:1,mute:1,playsinline:1,rel:0,modestbranding:1,controls:1,fs:0,iv_load_policy:3},
+  player=new YT.Player('ytp',{width:'100%',height:'100%',videoId:VIDEOS[i].id,playerVars:{autoplay:1,mute:1,playsinline:1,rel:0,modestbranding:1,controls:0,fs:0,iv_load_policy:3},
    events:{onReady:function(e){ready=true;e.target.mute();if(wantPlay)e.target.playVideo();snd.hidden=false},onStateChange:function(e){if(e.data===YT.PlayerState.ENDED)next()}}});
  }
  function playIdx(i,scroll){setActive(i,scroll!==false);wantPlay=true;if(!player){loadAPI(function(){makePlayer(i)})}else if(ready){player.loadVideoById(VIDEOS[i].id)}}
