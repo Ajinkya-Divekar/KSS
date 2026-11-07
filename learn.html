@@ -244,7 +244,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 <header>
  <div class="wrap">
   <a class="logo" href="#top" aria-label="Harsh Kothadia home"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 21C3 10 9 3 21 3c0 11-6 18-15 18z" fill="currentColor"/></svg><span>Harsh Kothadia<small>Tissue Paper Industry Consultant</small></span></a>
-  <nav id="nav"><a href="#videos">Videos</a><a href="#offers">Programmes</a><a href="#learn">What you'll learn</a><a href="#story">My story</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></nav>
+  <nav id="nav"><a href="#reviews">Reviews</a><a href="#offers">Programmes</a><a href="#videos">Videos</a><a href="#learn">What you'll learn</a><a href="#story">My story</a><a href="#faq">FAQ</a></nav>
   <div class="hr"><a class="btn line" href="/">KSS Bharat →</a><a class="btn gold" href="#offers">Enquire Now</a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button></div>
  </div>
 </header>
@@ -280,14 +280,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 
 <div class="tick" aria-hidden="true"><div class="tk" id="tk"></div></div>
 
-<section id="videos">
- <div class="dust" data-dust="10" aria-hidden="true"></div>
+<section id="reviews">
  <div class="wrap">
   <div class="ch">
-   <div class="head rv"><p class="kick">From my channel</p><h2>Real business, <span class="gt ul">on camera.</span></h2><p class="lead">My journey, industry knowledge and manufacturing insights, in short videos. <span id="vhint">Hover over a video to play it.</span></p></div>
-   <div class="cb"><button type="button" data-car="vcar" data-d="-1" aria-label="Previous videos">‹</button><button type="button" data-car="vcar" data-d="1" aria-label="Next videos">›</button></div>
+   <div class="head rv"><p class="kick">Reviews</p><h2>What people <span class="gt ul">say.</span></h2></div>
+   <div class="cb"><button type="button" data-car="revs" data-d="-1" aria-label="Previous reviews">‹</button><button type="button" data-car="revs" data-d="1" aria-label="Next reviews">›</button></div>
   </div>
-  <div class="vcar" id="vcar"></div>
+  <div class="car2" id="revs"></div>
  </div>
 </section>
 
@@ -298,6 +297,19 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
  <div class="wrap">
   <div class="head rv"><p class="kick">Learn from the business</p><h2>Four ways to <span class="gt ul">learn the tissue paper business.</span></h2><p class="lead">Tap Enquire Now to message me on WhatsApp. I'll help you pick the right option and share the details with you there.</p></div>
   <div class="g4" id="offerGrid"></div>
+ </div>
+</section>
+
+<div class="rule rv" aria-hidden="true"></div>
+
+<section id="videos">
+ <div class="dust" data-dust="10" aria-hidden="true"></div>
+ <div class="wrap">
+  <div class="ch">
+   <div class="head rv"><p class="kick">From my channel</p><h2>Real business, <span class="gt ul">on camera.</span></h2><p class="lead">My journey, industry knowledge and manufacturing insights, in short videos. <span id="vhint">Hover over a video to play it.</span></p></div>
+   <div class="cb"><button type="button" data-car="vcar" data-d="-1" aria-label="Previous videos">‹</button><button type="button" data-car="vcar" data-d="1" aria-label="Next videos">›</button></div>
+  </div>
+  <div class="vcar" id="vcar"></div>
  </div>
 </section>
 
@@ -340,16 +352,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
    <div class="step rv"><h3>Confirm</h3><p>Pricing and payment details are shared on WhatsApp.</p></div>
    <div class="step rv"><h3>Get started</h3><p>You receive your material, and we schedule your call or visit.</p></div>
   </div>
- </div>
-</section>
-
-<section id="reviews">
- <div class="wrap">
-  <div class="ch">
-   <div class="head rv"><p class="kick">Reviews</p><h2>What people <span class="gt ul">say.</span></h2></div>
-   <div class="cb"><button type="button" data-car="revs" data-d="-1" aria-label="Previous reviews">‹</button><button type="button" data-car="revs" data-d="1" aria-label="Next reviews">›</button></div>
-  </div>
-  <div class="car2" id="revs"></div>
  </div>
 </section>
 
@@ -474,7 +476,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
  function firstIdx(){for(var i=0;i<VIDEOS.length;i++)if(VIDEOS[i].id)return i;return -1}
  function setActive(i,scroll){act=i;cards.forEach(function(c,k){c.classList.toggle('on',k===i)});if(!scroll)return;var c=cards[i],L=c.offsetLeft,R=L+c.offsetWidth,v0=vcar.scrollLeft,v1=v0+vcar.clientWidth;if(L<v0+8||R>v1-8)vcar.scrollTo({left:Math.max(0,L-24),behavior:'smooth'})}
  function makePlayer(i){
-  player=new YT.Player('ytp',{width:'100%',height:'100%',videoId:VIDEOS[i].id,playerVars:{autoplay:1,mute:1,playsinline:1,rel:0,modestbranding:1,controls:0,fs:0,iv_load_policy:3},
+  player=new YT.Player('ytp',{width:'100%',height:'100%',videoId:VIDEOS[i].id,playerVars:{autoplay:1,mute:1,playsinline:1,rel:0,modestbranding:1,controls:1,fs:0,iv_load_policy:3},
    events:{onReady:function(e){ready=true;e.target.mute();if(wantPlay)e.target.playVideo();snd.hidden=false},onStateChange:function(e){if(e.data===YT.PlayerState.ENDED)next()}}});
  }
  function playIdx(i,scroll){setActive(i,scroll!==false);wantPlay=true;if(!player){loadAPI(function(){makePlayer(i)})}else if(ready){player.loadVideoById(VIDEOS[i].id)}}
