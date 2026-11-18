@@ -4,6 +4,10 @@
     {
       "source": "/inquire",
       "destination": "/index.html"
+    },
+    {
+      "source": "/inquire/",
+      "destination": "/index.html"
     }
   ]
 }
